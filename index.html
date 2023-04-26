@@ -1,13 +1,41 @@
 <html lang="pt_br">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/assets/css/style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./assets/css/style.css" />
     <title>Decodificador ONE</title>
-    <title>Document</title>
-</head>
-<body>
-    
-</body>
+  </head>
+  <body>
+    <header class="header">
+      <div class="logo">
+        <img src="./assets/images/aluraLogo.svg" alt="Logo" />
+      </div>
+    </header>
+    <main>
+      <div class="main_text_container">
+        <textarea class="main_text" placeholder="Digite seu texto"></textarea>
+      </div>
+      <div class="info_text">
+        <img src="assets/images/atentionSignal.svg" alt="atenção" />
+        <p>Apenas letras minúsculas e sem acento.</p>
+      </div>
+      <div class="buttons-areas">
+        <button class="encrypt-button">Criptografar</button>
+        <button class="decrypt-button">Descriptografar</button>
+      </div>
+      <div class="result-area">
+        <p>Nenhuma mensagem encontrada</p>
+        <p>Digite um texto que você deseja criptografar ou descriptografar.</p>
+        <button class="copy-button">Copiar</button>
+      </div>
+    </main>
+    <script src="/assets/js/textareaExapands.js"></script>
+  </body>
 </html>
