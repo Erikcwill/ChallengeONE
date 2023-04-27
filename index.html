@@ -9,6 +9,7 @@
       href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="./assets/css/reset.css" />
     <link rel="stylesheet" href="./assets/css/style.css" />
     <title>Decodificador ONE</title>
   </head>
@@ -18,24 +19,50 @@
         <img src="./assets/images/aluraLogo.svg" alt="Logo" />
       </div>
     </header>
-    <main>
-      <div class="main_text_container">
-        <textarea class="main_text" placeholder="Digite seu texto"></textarea>
-      </div>
-      <div class="info_text">
-        <img src="assets/images/atentionSignal.svg" alt="atenção" />
-        <p>Apenas letras minúsculas e sem acento.</p>
-      </div>
-      <div class="buttons-areas">
-        <button class="encrypt-button">Criptografar</button>
-        <button class="decrypt-button">Descriptografar</button>
-      </div>
+    <main class="main_container">
+      <section class="input-side">
+        <div class="main_text_container">
+          <textarea
+            class="main_text"
+            placeholder="Digite seu texto"
+            maxlength="1000"
+          ></textarea>
+        </div>
+        <div class="info_text">
+          <img src="assets/images/atentionSignal.svg" alt="atenção" />
+          <p>Apenas letras minúsculas e sem acento.</p>
+          <span id="charCount"></span>
+        </div>
+        <div class="buttons-areas">
+          <button class="encrypt button">Criptografar</button>
+          <button class="decrypt button">Descriptografar</button>
+          <button class="clean button">Limpar</button>
+        </div>
+      </section>
+
       <div class="result-area">
-        <p>Nenhuma mensagem encontrada</p>
-        <p>Digite um texto que você deseja criptografar ou descriptografar.</p>
-        <button class="copy-button">Copiar</button>
+        <p id="result-title">Nenhuma mensagem encontrada</p>
+        <p id="result-text">
+          Digite um texto que você deseja criptografar ou descriptografar.
+        </p>
+        <p id="result-crypto"></p>
+        <button class="copy button">Copiar</button>
       </div>
+
+      <footer class="footer">
+        <p>&copy; 2023 Desenvolvido por Erick Wililam</p>
+        <ul>
+          <li class="linkedin">
+            <a href="[seu perfil do LinkedIn]">LinkedIn</a>
+          </li>
+          <li class="github"><a href="[seu perfil do GitHub]">GitHub</a></li>
+          <li class="email">
+            <a href="mailto:[seu endereço de email]">Email</a>
+          </li>
+        </ul>
+      </footer>
     </main>
+    <script src="/assets/js/script.js"></script>
     <script src="/assets/js/textareaExapands.js"></script>
   </body>
 </html>

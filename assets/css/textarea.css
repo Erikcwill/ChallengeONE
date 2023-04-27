@@ -1,0 +1,43 @@
+.main_text_container {
+  margin-top: 5em;
+  margin-bottom: 10em;
+}
+
+.main_text {
+  background-color: var(--background-color);
+  color: var(--main-color);
+  resize: none;
+  overflow: hidden;
+  width: 100%;
+  font-size: 32px;
+  line-height: 150%;
+  font-family: var(--main-font);
+  padding: 0.5em;
+  box-sizing: border-box;
+  border: none;
+  outline: none;
+}
+
+.main_text::placeholder {
+  color: var(--main-color);
+  font-size: 32px;
+  font-weight: 400;
+  font-family: var(--main-font);
+  text-align: left;
+  height: 100%;
+}
+
+.result_text-area {
+  background-color: var(--background-color);
+  color: var(--main-color);
+  resize: none;
+  overflow: hidden;
+  width: 100%;
+  font-size: 32px;
+  line-height: 150%;
+  font-family: var(--main-font);
+  padding: 0.5em;
+  box-sizing: border-box;
+  border: none;
+  outline: none;
+}

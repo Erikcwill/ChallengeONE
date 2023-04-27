@@ -1,0 +1,28 @@
+.footer {
+  margin-top: 3em;
+  background-color: var(--main-color);
+  font-family: var(--main-font);
+  color: var(--background-color);
+  text-align: center;
+  padding: 20px 0;
+}
+
+footer ul li {
+  vertical-align: top;
+
+  display: inline-block;
+  margin-right: 20px; /* para criar um espaço entre os elementos */
+}
+
+footer p {
+  margin-bottom: 10px; /* adiciona 10 pixels de espaço abaixo do parágrafo */
+}
+
+footer ul {
+  margin-top: 10px; /* adiciona 10 pixels de espaço acima da lista */
+  margin-bottom: 0; /* remove o espaço abaixo da lista */
+  text-align: center;
+}
+
+
+
