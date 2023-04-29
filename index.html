@@ -28,11 +28,13 @@
             maxlength="1000"
           ></textarea>
         </div>
-        <div class="info_text">
-          <img src="assets/images/atentionSignal.svg" alt="atenção" />
-          <p>Apenas letras minúsculas e sem acento.</p>
+        <section class="info_container">
+          <div class="info_text">
+            <img src="assets/images/atentionSignal.svg" alt="atenção" />
+            <p>Apenas letras minúsculas e sem acento.</p>
+          </div>
           <span id="charCount"></span>
-        </div>
+        </section>
         <div class="buttons-areas">
           <button class="encrypt button">Criptografar</button>
           <button class="decrypt button">Descriptografar</button>
@@ -40,28 +42,41 @@
         </div>
       </section>
 
-      <div class="result-area">
-        <p id="result-title">Nenhuma mensagem encontrada</p>
-        <p id="result-text">
-          Digite um texto que você deseja criptografar ou descriptografar.
-        </p>
-        <p id="result-crypto"></p>
-        <button class="copy button">Copiar</button>
+      <div class="result-side">
+        <div class="result-area">
+          <div class="results_data">
+            <img id="find_img" src="/assets/images/boneco.svg" alt="" />
+            <p id="result-title">Nenhuma mensagem encontrada</p>
+            <p id="result-text">
+              Digite um texto que você deseja criptografar ou descriptografar.
+            </p>
+          </div>
+          <p id="result-crypto"></p>
+          <button class="copy button">Copiar</button>
+        </div>
       </div>
-
-      <footer class="footer">
-        <p>&copy; 2023 Desenvolvido por Erick Wililam</p>
-        <ul>
-          <li class="linkedin">
-            <a href="[seu perfil do LinkedIn]">LinkedIn</a>
-          </li>
-          <li class="github"><a href="[seu perfil do GitHub]">GitHub</a></li>
-          <li class="email">
-            <a href="mailto:[seu endereço de email]">Email</a>
-          </li>
-        </ul>
-      </footer>
     </main>
+
+    <footer class="footer">
+      <p>&copy; 2023 Desenvolvido por Erick Wililam</p>
+      <ul>
+        <li class="linkedin">
+          <a href="[seu perfil do LinkedIn]"
+            >linkedin <img src="./assets/images/svg/linkedin.svg" alt="teste"
+          /></a>
+        </li>
+        <li class="github">
+          <a href="[seu perfil do GitHub]">
+            <img src="/assets/images/svg/github.svg" alt=""
+          /></a>
+        </li>
+        <li class="email">
+          <a href="mailto:[seu endereço de email]"
+            ><img src="/assets/images/svg/email.svg" alt=""
+          /></a>
+        </li>
+      </ul>
+    </footer>
     <script src="/assets/js/script.js"></script>
     <script src="/assets/js/textareaExapands.js"></script>
   </body>

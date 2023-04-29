@@ -1,3 +1,26 @@
+#find_img {
+  display: none;
+}
+.result_text-area {
+  background-color: var(--background-color);
+  color: var(--main-color);
+  resize: none;
+  overflow: hidden;
+  width: 100%;
+  font-size: 32px;
+  line-height: 150%;
+  font-family: var(--main-font);
+  padding: 0.5em;
+  box-sizing: border-box;
+  border: none;
+  outline: none;
+}
+
+.results_data {
+  flex-direction: column;
+  gap: 1em;
+}
+
 .result-area {
   background-color: #ffffff;
   font-family: var(--main-font);
@@ -41,8 +64,37 @@
 
 @media screen and (min-width: 768px) {
   .result-area {
-    margin: 1em 1em 1em 1em;
+    justify-content: center;
+  }
+
+  .result-side {
+    flex-grow: 1;
+    margin-bottom: 1em;
+  }
+
+  #result-crypto {
+    overflow-y: auto;
+    margin-bottom: 2em;
   }
 }
 
+@media screen and (min-width: 1366px) {
+  .result-area {
+    overflow: auto;
+    max-height: calc(100vh - 10em);
+    width: 30em;
+    height: 45em;
+  }
+  #result-crypto {
+    overflow-y: auto;
+    margin-bottom: 2em;
+  }
 
+  .result-side {
+    display: flex;
+    justify-content: center;
+    flex-grow: 1;
+    flex-shrink: 1;
+    flex-basis: 0;
+  }
+}

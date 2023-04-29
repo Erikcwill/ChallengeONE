@@ -1,9 +1,11 @@
 const copyButton = document.querySelector(".copy");
 const mainTextArea = document.querySelector(".main_text");
+const resultData = document.querySelector(".results_data");
 const resultTitle = document.querySelector("#result-title");
 const resultText = document.querySelector("#result-text");
 const resultCrypto = document.querySelector("#result-crypto");
 const cleanButton = document.querySelector(".clean");
+const imgFind = document.querySelector("#find_img");
 
 // Verifica se há conteúdo na div de resultado e exibe o botão de cópia se necessário
 function checkResultContent() {
@@ -11,15 +13,13 @@ function checkResultContent() {
     mainTextArea.style.overflowY = "hidden";
     copyButton.style.display = "none";
     resultCrypto.style.display = "none";
-    resultTitle.style.display = "block";
-    resultText.style.display = "block";
+    resultData.style.display = "flex";
     cleanButton.classList.remove("clean-visible"); // Remover classe para esconder o botão
   } else {
     mainTextArea.style.overflowY = "auto";
     copyButton.style.display = "block";
     resultCrypto.style.display = "block";
-    resultTitle.style.display = "none";
-    resultText.style.display = "none";
+    resultData.style.display = "none";
     cleanButton.classList.add("clean-visible"); // Adicionar classe para mostrar o botão
   }
 }
@@ -40,12 +40,12 @@ copyButton.addEventListener("click", () => {
 });
 
 cleanButton.addEventListener("click", () => {
-  if (window.innerWidth < 768) {
-    mainTextArea.style.height = "auto";
+  if (window.innerWidth < 1366) {
+    mainTextArea.style.height = "9em";
     mainTextArea.value = "";
     updateResultContent();
   } else {
-    mainTextArea.style.height = "364";
+    mainTextArea.style.height = "15m";
     mainTextArea.value = "";
     updateResultContent();
   }
