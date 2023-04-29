@@ -6,6 +6,7 @@
 }
 
 .main_text {
+  font-family: var(--main-font);
   background-color: var(--background-color);
   color: var(--main-color);
   border: none;
@@ -20,6 +21,7 @@
 }
 
 .main_text::placeholder {
+  font-family: var(--main-font);
   color: var(--main-color);
   font-size: 32px;
   font-weight: 400;
@@ -29,14 +31,6 @@
 }
 
 @media screen and (min-width: 768px) {
-  .result-area {
-    justify-content: center;
-  }
-
-  #result-crypto {
-    overflow-y: auto;
-    margin-bottom: 2em;
-  }
   .main_text_container {
     padding-left: 1em;
   }

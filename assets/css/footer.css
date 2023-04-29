@@ -1,13 +1,14 @@
 .footer {
-  font-family: var(--main-font);
+  background-color: var(--main-color);
+  color: var(--background-color);
+  height: 1em;
   display: flex;
   margin-top: 2em;
   justify-content: space-around;
   align-items: center;
-  background-color: var(--main-color);
   padding: 20px;
   font-size: 14px;
-  color: var(--background-color);
+  gap: 1em;
 }
 
 .footer p {
@@ -18,7 +19,6 @@
   width: 70%;
   display: flex;
   justify-content: space-around;
-  list-style: none;
   padding: 0;
   margin: 0;
 }
