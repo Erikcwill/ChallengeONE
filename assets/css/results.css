@@ -68,7 +68,6 @@
   }
 
   .result-side {
-    flex-grow: 1;
     margin-bottom: 1em;
   }
 
@@ -83,7 +82,7 @@
     overflow: auto;
     max-height: calc(100vh - 10em);
     width: 30em;
-    height: 45em;
+    height: 40em;
   }
   #result-crypto {
     overflow-y: auto;

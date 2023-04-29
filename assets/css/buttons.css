@@ -97,4 +97,9 @@
     height: 4em;
     width: 90%;
   }
+
+  #result-crypto {
+    overflow-y: auto;
+    margin-bottom: 2em;
+  }
 }
