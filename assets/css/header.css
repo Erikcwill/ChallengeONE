@@ -1,11 +1,16 @@
 .header {
+  background-color: var(--main-color);
   padding: 1em;
+  margin-bottom: 2em;
+}
+
+.logo {
+  height: 48px;
+  width: 30px;
 }
 @media screen and (min-width: 768px) {
   .header {
     padding: 1em;
-    margin-left: 1em;
-    margin-top: 2em;
   }
 }
 
