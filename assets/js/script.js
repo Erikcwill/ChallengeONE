@@ -3,30 +3,26 @@ const mainTextArea = document.querySelector(".main_text");
 const resultData = document.querySelector(".results_data");
 const resultCrypto = document.querySelector("#result-crypto");
 const cleanButton = document.querySelector(".clean");
-const emptyTextareaMessage = document.getElementById("empty-textarea-message");
 
 // Verifica se há conteúdo na div de resultado e exibe o botão de cópia se necessário
- function checkResultContent() {
-  
+function checkResultContent() {
   if (mainTextArea.value === "") {
     mainTextArea.style.overflowY = "hidden";
     copyButton.style.display = "none";
     resultCrypto.style.display = "none";
     resultData.style.display = "flex";
     cleanButton.classList.remove("clean-visible");
-    emptyTextareaMessage.style.display = "block"; // Remover classe para esconder o botão
   } else {
     mainTextArea.style.overflowY = "auto";
     copyButton.style.display = "block";
     resultCrypto.style.display = "block";
     resultData.style.display = "none";
     cleanButton.classList.add("clean-visible");
-    emptyTextareaMessage.style.display = "none"; // Adicionar classe para mostrar o botão
   }
 }
 
 // Atualiza o conteúdo da div de resultado com o valor da text area
- function updateResultContent() {
+function updateResultContent() {
   resultCrypto.textContent = mainTextArea.value;
   checkResultContent();
 }
