@@ -6,6 +6,7 @@
 @import url("infos.css");
 
 :root {
+  --white-color: #ffffff;
   --background-color: #f7f3f3;
   --main-color: #0a3871;
   --secondary-color: #343a40;
@@ -13,6 +14,46 @@
   --main-font: "Inter";
 }
 
+.fade-out {
+  opacity: 0;
+  transition: opacity 2s ease-in-out;
+}
+
+@keyframes fade-out-animation {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+
+.shake {
+  animation: shake 0.3s;
+  border: 1px solid red;
+}
+
+@keyframes shake {
+  0% {
+    transform: translate(0);
+  }
+  25% {
+    transform: translate(-5px, 5px);
+  }
+  50% {
+    transform: translate(5px, -5px);
+  }
+  75% {
+    transform: translate(-5px, -5px);
+  }
+  100% {
+    transform: translate(0);
+  }
+}
+
+#alerta.mostrar {
+  opacity: 1;
+}
 body {
   font-family: var(--main-font);
   display: flex;
@@ -54,6 +95,8 @@ main {
     flex-direction: row;
     justify-content: center;
     flex-wrap: wrap;
+    height: 100%;
+    align-items: center;
   }
   .input-side {
     flex-grow: 1;

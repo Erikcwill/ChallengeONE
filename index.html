@@ -23,6 +23,7 @@
       <section class="input-side">
         <div class="main_text_container">
           <textarea
+            id="main_textarea"
             class="main_text"
             placeholder="Digite seu texto"
             maxlength="1000"
@@ -43,17 +44,42 @@
       </section>
 
       <div class="result-side">
-        <div class="result-area">
+        <div id="result-area" class="result-area">
           <div class="results_data">
-            <img id="find_img" src="/assets/images/boneco.svg" alt="Personagem buscando palavras" />
+            <img
+              id="find_img"
+              src="/assets/images/boneco.svg"
+              alt="Personagem buscando palavras"
+            />
             <p id="result-title">Nenhuma mensagem encontrada</p>
             <p id="result-text">
               Digite um texto que você deseja criptografar ou descriptografar.
             </p>
           </div>
+          <div id="empty-textarea-message" style="display: none">
+            Não há nada para descriptografar aqui.
+          </div>
+
           <p id="result-crypto"></p>
           <button class="copy button">Copiar</button>
         </div>
+      </div>
+
+      <div id="alerta"></div>
+
+      <div class="key-container">
+        <h3>Insira sua chave de criptografia:</h3>
+        <label for="a">Letra A:</label>
+        <input type="text" id="a" maxlength="5" /><br />
+        <label for="e">Letra E:</label>
+        <input type="text" id="e" maxlength="5" /><br />
+        <label for="i">Letra I:</label>
+        <input type="text" id="i" maxlength="5" /><br />
+        <label for="o">Letra O:</label>
+        <input type="text" id="o" maxlength="5" /><br />
+        <label for="u">Letra U:</label>
+        <input type="text" id="u" maxlength="5" /><br />
+        <button onclick="setKey()">Definir Chave</button>
       </div>
     </main>
 
@@ -77,6 +103,7 @@
         </li>
       </ul>
     </footer>
+    <script src="/assets/js/crypto.js"></script>
     <script src="/assets/js/script.js"></script>
     <script src="/assets/js/textareaExapands.js"></script>
   </body>
