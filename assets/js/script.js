@@ -6,18 +6,16 @@ const cleanButton = document.querySelector(".clean");
 
 // Verifica se há conteúdo na div de resultado e exibe o botão de cópia se necessário
 function checkResultContent() {
-  if (mainTextArea.value === "") {
-    mainTextArea.style.overflowY = "hidden";
-    copyButton.style.display = "none";
-    resultCrypto.style.display = "none";
-    resultData.style.display = "flex";
+  const isEmpty = mainTextArea.value === "";  
+
+  mainTextArea.style.overflowY = isEmpty ? "hidden" : "auto";
+  copyButton.style.display = isEmpty ? "none" : "block";
+  resultCrypto.style.display = isEmpty ? "none" : "flex";
+  resultData.style.display = isEmpty ? "flex" : "none";
+  cleanButton.classList.toggle("clean-visible", !isEmpty);
+
+  if (mainTextArea.value.includes(" ")) {
     cleanButton.classList.remove("clean-visible");
-  } else {
-    mainTextArea.style.overflowY = "auto";
-    copyButton.style.display = "block";
-    resultCrypto.style.display = "block";
-    resultData.style.display = "none";
-    cleanButton.classList.add("clean-visible");
   }
 }
 
