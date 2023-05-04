@@ -30,6 +30,30 @@
   height: 100%;
 }
 
+textarea.invalid {
+  background-color: #ffe6e6;
+  color: red;
+}
+#char-count {
+  font-size: 12px;
+  text-align: right;
+  margin-top: 5px;
+  margin-bottom: 10px;
+}
+input[type="text"] {
+  width: 200px;
+  height: 30px;
+  border: 1px solid black;
+  border-radius: 5px;
+  font-size: 16px;
+  padding: 5px;
+}
+input[type="text"].invalid {
+  border: 2px solid red;
+  background-color: #ffe6e6;
+  color: red;
+}
+
 @media screen and (min-width: 768px) {
   .main_text_container {
     padding-left: 1em;

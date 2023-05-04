@@ -1,0 +1,166 @@
+/*Estilos Gerais*/
+.editor-container {
+  font-family: var(--main-font);
+}
+h3 {
+  line-height: 120%;
+  text-align: center;
+  font-size: 1.2rem;
+  margin: 0 0 2rem 0;
+}
+
+label {
+  font-size: 1rem;
+  font-weight: bold;
+  margin-right: 0.5rem;
+  width: 100px;
+}
+.custom-itens > .button {
+  background-color: var(--main-color);
+  color: var(--secondary-color);
+}
+.custom-itens li {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.input-color {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background-color: transparent;
+  width: 30px;
+  height: 30px;
+  border: none;
+  cursor: pointer;
+}
+.input-color::-webkit-color-swatch {
+  border-radius: 50%;
+  border: 2px solid #000000;
+}
+.input-color::-moz-color-swatch {
+  border-radius: 50%;
+  border: 2px solid #000000;
+}
+
+input[type="text"] {
+  font-size: 1rem;
+  padding: 0.5rem;
+  border-radius: 0.25rem;
+  border: 1px solid #ccc;
+}
+
+.custom-itens > .info_text {
+  color: var(--tertiary-color);
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+#attentionIconCustom {
+  fill: #dc3545;
+  width: 1.5rem;
+  height: 1.5rem;
+  margin-right: 0.5rem;
+}
+
+/* Estilos específicos */
+
+/*Sessão dos inputs*/
+
+.custom-itens:nth-child(1) {
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  background-color: var(--background-color);
+  padding: 2rem;
+}
+
+.custom-itens:nth-child(1) input[type="text"] {
+  width: 100%;
+}
+
+/*Sessão das keys atuais*/
+
+.custom-itens:nth-child(2) {
+  background-color: var(--background-color);
+  padding: 2rem;
+}
+
+.custom-itens:nth-child(2) button {
+  margin-top: 1rem;
+}
+
+/*Sessão dos temas*/
+.custom-itens:nth-child(3) {
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+  background-color: var(--background-color);
+  padding: 2rem;
+}
+
+.custom-itens:nth-child(3) li {
+  justify-content: space-between;
+  padding: 0.5em 1em 0.5em 1em;
+  background-color: var(--white-color);
+  display: flex;
+  align-items: center;
+}
+
+.custom-itens:nth-child(3) label {
+  font-weight: lighter;
+  margin-right: 1rem;
+  width: 165px;
+}
+
+#cryptoKeysList li {
+  display: flex;
+  align-items: center;
+}
+
+#cryptoKeysList li strong {
+  margin-right: 1rem;
+  width: 210px;
+}
+
+.custom-itens li span {
+  display: flex;
+  justify-content: center;
+  color: var(--main-color);
+  padding: 5px;
+  border-radius: 5px;
+  background-color: var(--white-color);
+  width: 100%;
+}
+
+@media only screen and (min-width: 1024px) {
+  .overlay {
+    display: flex;
+    background-color: rgba(0, 0, 0, 0.5);
+    align-items: center;
+  }
+
+  .editor-container {
+    display: flex;
+    background-color: var(--secondary-color);
+    border-radius: 15px;
+    padding: 20px;
+    justify-content: space-between;
+  }
+
+  .custom-itens {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 33.33%;
+  }
+
+  .custom-itens > .button {
+    background-color: var(--main-color);
+    color: var(--secondary-color);
+  }
+
+  .custom-itens:nth-child(3),
+  .custom-itens:nth-child(1) {
+    border-radius: 0;
+  }
+}

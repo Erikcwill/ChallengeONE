@@ -5,57 +5,19 @@
 @import url("results.css");
 @import url("infos.css");
 @import url("hamburguer-animation.css");
-@import url("keyscripto.css");
+@import url("custom-menu.css");
+@import url("error.css");
 
 :root {
   --white-color: #ffffff;
   --background-color: #f7f3f3;
   --main-color: #0a3871;
-  --secondary-color: #343a40;
-  --terciary-color: #495057;
+  --secondary-color: #ffffff;
+  --terciary-color: #343a40;
+  --fourth-color: #495057;
   --main-font: "Inter";
 }
 
-.fade-out {
-  opacity: 0;
-  transition: opacity 2s ease-in-out;
-}
-
-@keyframes fade-out-animation {
-  from {
-    opacity: 1;
-  }
-  to {
-    opacity: 0;
-  }
-}
-
-.shake {
-  animation: shake 0.3s;
-  border: 1px solid red;
-}
-
-@keyframes shake {
-  0% {
-    transform: translate(0);
-  }
-  25% {
-    transform: translate(-5px, 5px);
-  }
-  50% {
-    transform: translate(5px, -5px);
-  }
-  75% {
-    transform: translate(-5px, -5px);
-  }
-  100% {
-    transform: translate(0);
-  }
-}
-
-#alerta.mostrar {
-  opacity: 1;
-}
 body {
   font-family: var(--main-font);
   display: flex;
@@ -88,7 +50,6 @@ main {
 
 @media screen and (min-width: 1366px) {
   body {
-    overflow: hidden;
     min-height: 100vh;
   }
   .main_container {

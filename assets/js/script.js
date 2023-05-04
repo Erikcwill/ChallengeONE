@@ -1,22 +1,10 @@
-const copyButton = document.querySelector(".copy");
-const mainTextArea = document.querySelector(".main_text");
-const resultData = document.querySelector(".results_data");
-const resultCrypto = document.querySelector("#result-crypto");
-const cleanButton = document.querySelector(".clean");
-
 // Verifica se há conteúdo na div de resultado e exibe o botão de cópia se necessário
 function checkResultContent() {
-  const isEmpty = mainTextArea.value === "";  
-
+  const isEmpty = mainTextArea.value === "";
   mainTextArea.style.overflowY = isEmpty ? "hidden" : "auto";
   copyButton.style.display = isEmpty ? "none" : "block";
   resultCrypto.style.display = isEmpty ? "none" : "flex";
   resultData.style.display = isEmpty ? "flex" : "none";
-  cleanButton.classList.toggle("clean-visible", !isEmpty);
-
-  if (mainTextArea.value.includes(" ")) {
-    cleanButton.classList.remove("clean-visible");
-  }
 }
 
 // Atualiza o conteúdo da div de resultado com o valor da text area
@@ -44,7 +32,7 @@ cleanButton.addEventListener("click", () => {
     mainTextArea.value = "";
     updateResultContent();
   }
+  window.scrollTo(0, 0);
 });
-
 // Executa a verificação inicialmente
 checkResultContent();

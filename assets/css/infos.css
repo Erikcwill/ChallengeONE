@@ -5,7 +5,7 @@
 .info_text {
   display: flex;
   align-items: center;
-  color: var(--secondary-color);
+  color: var(--terciary-color);
   font-size: 12px;
   font-weight: 400;
   padding: 0.5em;
