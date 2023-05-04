@@ -4,6 +4,8 @@
 @import url("header.css");
 @import url("results.css");
 @import url("infos.css");
+@import url("hamburguer-animation.css");
+@import url("keyscripto.css");
 
 :root {
   --white-color: #ffffff;

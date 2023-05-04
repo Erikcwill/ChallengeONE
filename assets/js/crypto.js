@@ -1,7 +1,7 @@
 const decryptButton = document.querySelector(".decrypt");
 const encryptButton = document.querySelector(".encrypt");
 const resultArea = document.getElementById("result-area");
-const cryptoKeys = document.getElementById("crypto-keys");
+
 
 let key = {
   a: "ai",
@@ -21,11 +21,11 @@ let reverseKey = {
 
 function updateKeysText() {
   // atualiza o texto das chaves
-  let keysText = "As atuais chaves de criptografia são:";
-  for (let prop in key) {
-    keysText += `\n${prop.toUpperCase()} = ${key[prop]}`;
-  }
-  cryptoKeys.textContent = keysText;
+  document.getElementById("keyA").textContent = key.a;
+  document.getElementById("keyE").textContent = key.e;
+  document.getElementById("keyI").textContent = key.i;
+  document.getElementById("keyO").textContent = key.o;
+  document.getElementById("keyU").textContent = key.u;
 }
 
 updateKeysText();
@@ -53,7 +53,7 @@ function setKey() {
 
   alert("Chave de criptografia definida com sucesso!");
 
-  updateKeysText()
+  updateKeysText();
 }
 
 function showMessage(message) {
@@ -90,6 +90,7 @@ function processText(action) {
 }
 
 function encrypt() {
+  document.getElementById("main_textarea").disabled = true;
   if (processText("criptografar")) {
     let inputText = document
       .getElementById("main_textarea")
@@ -105,9 +106,16 @@ function encrypt() {
     }
     document.getElementById("result-crypto").textContent = encryptedText;
   }
+
+  document.getElementById("result-area").scrollIntoView();
+
+  setTimeout(function () {
+    document.getElementById("main_textarea").disabled = false;
+  }, 1000);
 }
 
 function decrypt() {
+  document.getElementById("main_textarea").disabled = true;
   if (processText("descriptografar")) {
     const inputText = document
       .getElementById("main_textarea")
@@ -141,6 +149,12 @@ function decrypt() {
       document.getElementById("result-crypto").textContent = decryptedText;
     }
   }
+
+  document.getElementById("result-area").scrollIntoView();
+
+  setTimeout(function () {
+    document.getElementById("main_textarea").disabled = false;
+  }, 1000);
 }
 
 encryptButton.addEventListener("click", encrypt);

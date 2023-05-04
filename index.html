@@ -18,6 +18,90 @@
       <div class="logo">
         <img src="./assets/images/svg/whitelogo.svg" alt="Logo" />
       </div>
+      <div class="hamburguer-header">
+        <section class="menu-hamburguer-layout">
+          <input id="menu-hamburguer" type="checkbox" />
+          <label for="menu-hamburguer">
+            <span class="hamburguer"></span>
+            <div class="menu-hamburguer-div">
+              <section class="menu-hamburguer-content">
+                <div class="editor-container">
+                  <div class="key-input">
+                    <h3>Insira sua chave de criptografia:</h3>
+                    <label for="a">Letra A:</label>
+                    <input type="text" id="a" maxlength="5" /><br />
+                    <label for="e">Letra E:</label>
+                    <input type="text" id="e" maxlength="5" /><br />
+                    <label for="i">Letra I:</label>
+                    <input type="text" id="i" maxlength="5" /><br />
+                    <label for="o">Letra O:</label>
+                    <input type="text" id="o" maxlength="5" /><br />
+                    <label for="u">Letra U:</label>
+                    <input type="text" id="u" maxlength="5" /><br />
+                    <div class="info_text">
+                      <img
+                        src="assets/images/atentionSignal.svg"
+                        alt="atenção"
+                      />
+                      <p>Apenas letras minúsculas e sem acento.</p>
+                    </div>
+                    <button class="button" id="setValue" onclick="setKey()">
+                      Definir Chave
+                    </button>
+                  </div>
+                  <ul id="cryptoKeysList">
+                    <h3>Essas são as chaves atuais :)</h3>
+                    <li><strong>Letra A:</strong> <span id="keyA"></span></li>
+                    <li><strong>Letra E:</strong> <span id="keyE"></span></li>
+                    <li><strong>Letra I:</strong> <span id="keyI"></span></li>
+                    <li><strong>Letra O:</strong> <span id="keyO"></span></li>
+                    <li><strong>Letra U:</strong> <span id="keyU"></span></li>
+                  </ul>
+                  <div class="theme-selection-div">
+                    <h3>Personalize as cores do site:</h3>
+                    <label for="background-color-input">Cor de fundo:</label>
+                    <input
+                      type="color"
+                      id="background-color-input"
+                      value="#ffffff"
+                    />
+                    <br />
+                    <label for="background-color-input"
+                      >Cor de fundo (2):</label
+                    >
+                    <input
+                      type="color"
+                      id="background-color-input"
+                      value="#ffffff"
+                    />
+                    <br />
+                    <label for="primary-color-input">Cor primária:</label>
+                    <input
+                      type="color"
+                      id="primary-color-input"
+                      value="#0a3871"
+                    />
+                    <br />
+                    <label for="secondary-color-input">Cor secundária:</label>
+                    <input
+                      type="color"
+                      id="secondary-color-input"
+                      value="#343a40"
+                    />
+                    <br />
+                    <label for="tertiary-color-input">Cor terciária:</label>
+                    <input
+                      type="color"
+                      id="tertiary-color-input"
+                      value="#495057"
+                    />
+                  </div>
+                </div>
+              </section>
+            </div>
+          </label>
+        </section>
+      </div>
     </header>
     <main class="main_container">
       <section class="input-side">
@@ -42,7 +126,6 @@
           <button class="clean button">Limpar</button>
         </div>
       </section>
-
       <div class="result-side">
         <div id="result-area" class="result-area">
           <div class="results_data">
@@ -60,26 +143,7 @@
           <button class="copy button">Copiar</button>
         </div>
       </div>
-
-      <div id="alerta"></div>
-
-      <div class="key-container">
-        <h3>Insira sua chave de criptografia:</h3>
-        <label for="a">Letra A:</label>
-        <input type="text" id="a" maxlength="5" /><br />
-        <label for="e">Letra E:</label>
-        <input type="text" id="e" maxlength="5" /><br />
-        <label for="i">Letra I:</label>
-        <input type="text" id="i" maxlength="5" /><br />
-        <label for="o">Letra O:</label>
-        <input type="text" id="o" maxlength="5" /><br />
-        <label for="u">Letra U:</label>
-        <input type="text" id="u" maxlength="5" /><br />
-        <button onclick="setKey()">Definir Chave</button>
-      </div>
-      <div id="crypto-keys"></div>
     </main>
-
     <footer class="footer">
       <p>&copy; 2023 Desenvolvido por Erick Wililam</p>
       <ul>
