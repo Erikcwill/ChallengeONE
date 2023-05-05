@@ -8,7 +8,7 @@
 .main_text {
   font-family: var(--main-font);
   background-color: var(--background-color);
-  color: var(--main-color);
+  color: var(--main-text-color);
   border: none;
   outline: none;
   resize: none;
@@ -22,36 +22,12 @@
 
 .main_text::placeholder {
   font-family: var(--main-font);
-  color: var(--main-color);
+  color: var(--main-text-color);
   font-size: 32px;
   font-weight: 400;
   font-family: var(--main-font);
   text-align: left;
   height: 100%;
-}
-
-textarea.invalid {
-  background-color: #ffe6e6;
-  color: red;
-}
-#char-count {
-  font-size: 12px;
-  text-align: right;
-  margin-top: 5px;
-  margin-bottom: 10px;
-}
-input[type="text"] {
-  width: 200px;
-  height: 30px;
-  border: 1px solid black;
-  border-radius: 5px;
-  font-size: 16px;
-  padding: 5px;
-}
-input[type="text"].invalid {
-  border: 2px solid red;
-  background-color: #ffe6e6;
-  color: red;
 }
 
 @media screen and (min-width: 768px) {

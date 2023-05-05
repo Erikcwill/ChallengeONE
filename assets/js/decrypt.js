@@ -29,7 +29,7 @@ function decrypt() {
     }
 
     if (!encontrado) {
-      showError("Esse texto não está criptografado.");
+      showError("Esse texto não está criptografado." , resultArea , mainTextArea );
     } else {
       resultCrypto.textContent = decryptedText;
     }

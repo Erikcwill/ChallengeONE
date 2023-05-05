@@ -8,6 +8,7 @@
 }
 
 .result-area {
+  background-color: var(--secondary-color);
   display: flex;
   flex-direction: column;
   gap: 1em;
@@ -19,12 +20,15 @@
   word-wrap: break-word;
 }
 
+.result-area p {
+  color: var(--secondary-text-color);
+}
+
 #find_img {
   display: none;
 }
 
 #result-title {
-  color: var(--terciary-color);
   font-weight: 700;
   font-size: 24px;
   line-height: 28px;
@@ -34,14 +38,12 @@
 
 #result-text {
   line-height: 24px;
-  color: var(--terciary-color);
   text-align: center;
   padding: 0 1em 0 1em;
 }
 
 #result-crypto {
   display: none;
-  color: var(--terciary-color);
   font-size: 24px;
   line-height: 150%;
   word-break: break-word;

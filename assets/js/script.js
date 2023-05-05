@@ -1,4 +1,4 @@
-// Verifica se há conteúdo na div de resultado e exibe o botão de cópia se necessário
+// Verifica se há conteúdo na div de resultado e altera a exibição da area de resultados se necessário.
 function checkResultContent() {
   const isEmpty = mainTextArea.value === "";
   mainTextArea.style.overflowY = isEmpty ? "hidden" : "auto";
@@ -7,7 +7,7 @@ function checkResultContent() {
   resultData.style.display = isEmpty ? "flex" : "none";
 }
 
-// Atualiza o conteúdo da div de resultado com o valor da text area
+// Atualiza o conteúdo da div de resultado com o valor da text area.
 function updateResultContent() {
   resultCrypto.textContent = mainTextArea.value;
   checkResultContent();
@@ -21,7 +21,7 @@ copyButton.addEventListener("click", () => {
   // Copia o texto da div de resultado para a área de transferência
   navigator.clipboard.writeText(resultCrypto.textContent);
 });
-
+//Adiciona um ouvinte de evento para o botão de limpar, verificando o tamanho da tela para reposicionar a text area.
 cleanButton.addEventListener("click", () => {
   if (window.innerWidth < 1366) {
     mainTextArea.style.height = "9em";

@@ -9,9 +9,9 @@
 }
 
 .button {
-  background-color: var(--background-color);
-  color: var(--main-color);
-  border-color: var(--main-color);
+  background-color: var(--button-color-secondary);
+  color: var(--button-text-secondary);
+  border-color: var(--button-text-secondary);
   font-family: var(--main-font);
   border-radius: 20px;
   border: 1px solid;
@@ -34,14 +34,14 @@
 }
 
 .encrypt {
-  background-color: var(--main-color);
-  color: var(--secondary-color);
+  background-color: var(--button-color-main);
+  color: var(--button-text-main);
 }
 
 .encrypt:hover {
   background-color: var(--background-color);
-  color: var(--main-color);
-  border-color: var(--main-color);
+  color: var(--button-text-secondary);
+  border-color: var(--button-text-secondary);
   border: 1px solid;
   cursor: url("/assets/images/svg/lock-open.svg"), auto;
 }
@@ -51,9 +51,9 @@
 }
 
 .decrypt:hover {
-  background-color: var(--main-color);
-  color: var(--background-color);
-  border-color: var(--background-color);
+  background-color: var(--button-color-main);
+  color: var(--button-text-main);
+  border-color: var(--button-text-main);
   cursor: url("/assets/images/svg/lock-closed.svg"), auto;
 }
 
@@ -67,10 +67,11 @@
   color: var(--background-color);
   border-color: var(--background-color);
 }
-
-.clean:active {
+.copy:hover {
+  background-color: var(--button-color-main);
+  color: var(--button-text-main);
+  border-color: var(--button-text-main);
 }
-
 .copy {
   display: none;
   margin: 0 1em 0 1em;

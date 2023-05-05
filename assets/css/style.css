@@ -4,25 +4,50 @@
 @import url("header.css");
 @import url("results.css");
 @import url("infos.css");
-@import url("menu-overlay.css");
-@import url("custom-menu.css");
+@import url("overlay-menu.css");
 @import url("error.css");
+@import url("icons.css");
+@import url("switch-theme.css");
 
 :root {
-  --white-color: #ffffff;
-  --background-color: #f7f3f3;
+  /*Colors*/
+
   --main-color: #0a3871;
+  --main-text-color: #0a3871;
+  --button-color-main: #0a3871;
+  --button-text-secondary: #0a3871;
+  --footer-itens-color: #0a3871;
+
+  --background-color: #f7f3f3;
+  --header-footer-color: #f7f3f3;
+  --button-color-secondary: ##f7f3f3;
+
   --secondary-color: #ffffff;
-  --terciary-color: #343a40;
-  --fourth-color: #495057;
-  --hover-color: #4690eb;
-  --hover-secondary-color: #ffffff;
+  --button-text-main: #ffffff;
+
+  --secondary-text-color: #343a40;
+
+  --terciary-text-color: #495057;
+
+  --fourth-color: #000000;
+
+  --error-color: #f15353;
+
+  --overlay-color: #2d415bf0;
+
+  --details-color: #e0e0e0;
   --main-font: "Inter";
 }
 
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 body {
-  cursor: default;
   font-family: var(--main-font);
+  cursor: default;
   display: flex;
   flex-direction: column;
   background-color: var(--background-color);
@@ -36,9 +61,6 @@ main {
   display: flex;
   flex-direction: column;
 }
-
-
-
 
 @media screen and (min-width: 768px) {
   html,

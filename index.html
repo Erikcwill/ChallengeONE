@@ -20,14 +20,20 @@
   <body>
     <header class="header">
       <div class="logo">
-        <img src="./assets/images/svg/whitelogo.svg" alt="Logo" />
+        <img src="./assets/images/svg/light/alura.svg" alt="Logo" />
       </div>
-      <nav>
-        <div class="menu-icon">
-          <i class="fas fa-bars"></i>
-        </div>
-        <button class="customize-btn button">Personalizar</button>
-      </nav>
+
+      <div class="menus-header">
+        <label class="switch">
+          <input type="checkbox" />
+          <span class="slider round"></span>
+        </label>
+        <div class="menu-icon"></div>
+        <button class="customize-btn">
+          <img src="./assets/images/svg/light/key-config.svg" alt="" />
+        </button>
+      </div class="menus-header">
+
     </header>
     <main class="main_container">
       <section class="input-side">
@@ -41,7 +47,7 @@
         </div>
         <section class="info_container">
           <div class="info_text">
-            <img src="assets/images/atentionSignal.svg" alt="atenção" />
+            <img src="./assets/images/svg/light/attention.svg" alt="atenção" />
             <p>Apenas letras minúsculas e sem acento.</p>
           </div>
           <span id="charCount"></span>
@@ -57,7 +63,7 @@
           <div class="results-data">
             <img
               id="find_img"
-              src="./assets/images/boneco.svg"
+              src="./assets/images/svg/light/finder-guy.svg"
               alt="Personagem buscando palavras"
             />
             <p id="result-title">Nenhuma mensagem encontrada</p>
@@ -76,23 +82,23 @@
           <h3>Insira sua chave de criptografia:</h3>
           <li>
             <label for="a">Letra A:</label>
-            <input type="text" id="a" maxlength="5" /><br />
+            <input class="input-key" type="text" id="a" maxlength="5" pattern="[a-z ]*" /><br />
           </li>
           <li>
             <label for="e">Letra E:</label>
-            <input type="text" id="e" maxlength="5" /><br />
+            <input class="input-key" type="text" id="e" maxlength="5" /><br />
           </li>
           <li>
             <label for="i">Letra I:</label>
-            <input type="text" id="i" maxlength="5" /><br />
+            <input class="input-key" type="text" id="i" maxlength="5" /><br />
           </li>
           <li>
             <label for="o">Letra O:</label>
-            <input type="text" id="o" maxlength="5" /><br />
+            <input class="input-key" type="text" id="o" maxlength="5" /><br />
           </li>
           <li>
             <label for="u">Letra U:</label>
-            <input type="text" id="u" maxlength="5" /><br />
+            <input class="input-key" type="text" id="u" maxlength="5" /><br />
           </li>
 
           <aside class="info_text">
@@ -103,7 +109,6 @@
             </svg>
             <p>Apenas letras minúsculas e sem acento. Máximo de 5 caracteres</p>
           </aside>
-
           <button class="button" id="setValue" onclick="setKey()">
             Definir Chave
           </button>
@@ -115,95 +120,33 @@
           <li><strong>Letra I:</strong> <span id="keyI"></span></li>
           <li><strong>Letra O:</strong> <span id="keyO"></span></li>
           <li><strong>Letra U:</strong> <span id="keyU"></span></li>
-          <button class="button" onclick="resetKey()">
-            Redefinir para valores padrões
-          </button>
-        </ul>
-        <ul id="theme-selection-div" class="custom-itens">
-          <h3>Personalize as cores do site:</h3>
-          <li>
-            <label class="label-color-input" for="background-color-input"
-              >Cor de fundo:</label
-            >
-            <input
-              type="color"
-              class="input-color"
-              id="background-color-input"
-              value="#ffffff"
-            />
-          </li>
-
-          <li>
-            <label class="label-color-input" for="primary-color-input"
-              >Cor principal:</label
-            >
-            <input
-              type="color"
-              class="input-color"
-              id="primary-color-input"
-              value="#0a3871"
-            />
-          </li>
-
-          <li>
-            <label class="label-color-input" for="background-color-input"
-              >Segunda cor:</label
-            >
-            <input
-              type="color"
-              class="input-color"
-              id="background-color-input"
-              value="#ffffff"
-            />
-          </li>
-
-          <li>
-            <label class="label-color-input" for="secondary-color-input"
-              >Terceira cor:</label
-            >
-            <input
-              type="color"
-              class="input-color"
-              id="secondary-color-input"
-              value="#343a40"
-            />
-          </li>
-
-          <li>
-            <label for="tertiary-color-input">Quarta cor:</label>
-            <input
-              type="color"
-              class="input-color"
-              id="tertiary-color-input"
-              value="#495057"
-            />
-          </li>
-          <button class="button" onclick="resetKey()">
-            Redefinir para cores padrões
-          </button>
+          <button class="button" onclick="resetKey()">Redefinir padrões</button>
         </ul>
       </div>
     </div>
+
     <footer class="footer">
       <p>&copy; 2023 Desenvolvido por Erick Wililam</p>
       <ul>
         <li class="linkedin">
-          <a href="[seu perfil do LinkedIn]"
-            >linkedin <img src="./assets/images/svg/linkedin.svg" alt="teste"
+          <a href="https://www.linkedin.com/in/erikcwill/"
+          target="_blank">
+            <img src="./assets/images/svg/light/linkedin.svg" alt="Linkedin"
           /></a>
         </li>
         <li class="github">
-          <a href="[seu perfil do GitHub]">
-            <img src="./assets/images/svg/github.svg" alt=""
-          /></a>
+          <a href="https://github.com/Erikcwill"
+          target="_blank"><img src="./assets/images/svg/light/github.svg"" alt="Github"></a
+          >
         </li>
         <li class="email">
-          <a href="mailto:[seu endereço de email]"
-            ><img src="./assets/images/svg/email.svg" alt=""
-          /></a>
+          <a href="mailto: erikcwill@gmail.com "
+          target="_blank"><img src="./assets/images/svg/light/email.svg"" alt="Email"></a
+          >
         </li>
       </ul>
     </footer>
+
     <script src="./assets/js/constants.js"></script>
     <script src="./assets/js/encrypt.js"></script>
     <script src="./assets/js/decrypt.js"></script>
@@ -213,5 +156,8 @@
     <script src="./assets/js/script.js"></script>
     <script src="./assets/js/validateText.js"></script>
     <script src="./assets/js/textareaExapands.js"></script>
+    <script src="./assets/js/themes.js"></script>
+    <script src="./assets/js/switchDarkMode.js"></script>
+
   </body>
 </html>

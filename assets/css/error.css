@@ -1,6 +1,6 @@
 .shake {
     animation: shake 0.3s;
-    border: 1px solid red;
+    border: 1px solid var(--error-color);
   }
   
   @keyframes shake {
