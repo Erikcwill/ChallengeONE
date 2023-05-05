@@ -7,7 +7,7 @@ const customizeBtn = document.querySelector(".customize-btn");
 //Main Areas
 const resultArea = document.getElementById("result-area");
 const mainTextArea = document.querySelector(".main_text");
-const resultData = document.querySelector(".results_data");
+const resultData = document.querySelector(".results-data");
 const resultCrypto = document.querySelector("#result-crypto");
 //Menu
 const menuIcon = document.querySelector(".menu-icon");

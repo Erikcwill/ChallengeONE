@@ -2,7 +2,7 @@
   margin-bottom: 1em;
 }
 
-.results_data {
+.results-data {
   flex-direction: column;
   gap: 1em;
 }
@@ -54,7 +54,7 @@
   .result-area {
     overflow: auto;
     width: 30em;
-    height: 40em;
+    height: 45em;
   }
   #find_img {
     display: flex;

@@ -4,7 +4,7 @@
 @import url("header.css");
 @import url("results.css");
 @import url("infos.css");
-@import url("hamburguer-animation.css");
+@import url("menu-overlay.css");
 @import url("custom-menu.css");
 @import url("error.css");
 
@@ -15,10 +15,13 @@
   --secondary-color: #ffffff;
   --terciary-color: #343a40;
   --fourth-color: #495057;
+  --hover-color: #4690eb;
+  --hover-secondary-color: #ffffff;
   --main-font: "Inter";
 }
 
 body {
+  cursor: default;
   font-family: var(--main-font);
   display: flex;
   flex-direction: column;
@@ -33,6 +36,9 @@ main {
   display: flex;
   flex-direction: column;
 }
+
+
+
 
 @media screen and (min-width: 768px) {
   html,

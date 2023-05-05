@@ -1,5 +1,6 @@
 function encrypt() {
-  document.getElementById("main_textarea").disabled = true;
+  encryptButton.disabled = true;
+  mainTextArea.disabled = true;
   if (processText("criptografar")) {
     let inputText = document
       .getElementById("main_textarea")
@@ -13,13 +14,14 @@ function encrypt() {
         encryptedText += char;
       }
     }
-    document.getElementById("result-crypto").textContent = encryptedText;
+    resultCrypto.textContent = encryptedText;
   }
 
-  document.getElementById("result-area").scrollIntoView();
+  resultArea.scrollIntoView();
 
   setTimeout(function () {
-    document.getElementById("main_textarea").disabled = false;
+    mainTextArea.disabled = false;
+    encryptButton.disabled = false;
   }, 1000);
 }
 

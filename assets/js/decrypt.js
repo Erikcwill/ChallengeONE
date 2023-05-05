@@ -1,5 +1,6 @@
 function decrypt() {
-  document.getElementById("main_textarea").disabled = true;
+  decryptButton.disable = true;
+  mainTextArea.disabled = true;
   if (processText("descriptografar")) {
     const inputText = document
       .getElementById("main_textarea")
@@ -30,14 +31,15 @@ function decrypt() {
     if (!encontrado) {
       showError("Esse texto não está criptografado.");
     } else {
-      document.getElementById("result-crypto").textContent = decryptedText;
+      resultCrypto.textContent = decryptedText;
     }
   }
 
   resultArea.scrollIntoView();
 
   setTimeout(function () {
-    document.getElementById("main_textarea").disabled = false;
+    decryptButton.disable = false;
+    mainTextArea.disabled = false;
   }, 1000);
 }
 

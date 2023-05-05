@@ -34,5 +34,6 @@ cleanButton.addEventListener("click", () => {
   }
   window.scrollTo(0, 0);
 });
+
 // Executa a verificação inicialmente
 checkResultContent();

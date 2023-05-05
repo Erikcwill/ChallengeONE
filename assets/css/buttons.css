@@ -21,21 +21,65 @@
   height: 4em;
 }
 
+.button:hover {
+  box-shadow: 0px 15px 25px -5px rgba(darken(dodgerblue, 40%));
+  transform: scale(1.03);
+  transition: all 0.2s ease-in-out;
+}
+
+.button:active {
+  box-shadow: 0px 4px 8px rgba(darken(dodgerblue, 30%));
+  transform: scale(0.98);
+  transition: all 0.2s ease-in-out;
+}
+
 .encrypt {
   background-color: var(--main-color);
-  color: var(--white-color);
-  border: none;
+  color: var(--secondary-color);
+}
+
+.encrypt:hover {
+  background-color: var(--background-color);
+  color: var(--main-color);
+  border-color: var(--main-color);
+  border: 1px solid;
+  cursor: url("/assets/images/svg/lock-open.svg"), auto;
+}
+
+.encrypt:active {
+  cursor: url("/assets/images/svg/lock-closed.svg"), auto;
+}
+
+.decrypt:hover {
+  background-color: var(--main-color);
+  color: var(--background-color);
+  border-color: var(--background-color);
+  cursor: url("/assets/images/svg/lock-closed.svg"), auto;
+}
+
+.decrypt:active {
+  cursor: url("/assets/images/svg/lock-open.svg"), auto;
+}
+
+.clean:hover {
+  cursor: pointer;
+  background-color: var(--main-color);
+  color: var(--background-color);
+  border-color: var(--background-color);
+}
+
+.clean:active {
 }
 
 .copy {
   display: none;
-  background-color: var(--background-color);
-  font-size: 16px;
-  color: var(--main-color);
-  border-color: var(--main-color);
   margin: 0 1em 0 1em;
   margin-top: auto;
   min-height: 4em;
+}
+
+.copy:hover {
+  cursor: url("/assets/images/svg/copy-icon.svg"), auto;
 }
 
 @media screen and (min-width: 768px) {
@@ -46,21 +90,6 @@
 }
 
 @media screen and (min-width: 1366px) {
-  .clean,
-  .clean-visible {
-    position: static;
-    opacity: 1;
-    background-color: var(--background-color);
-    font-size: 16px;
-    color: var(--main-color);
-    height: 4em;
-    border-color: var(--main-color);
-    width: 100%;
-    margin: 0;
-    text-align: center;
-    box-shadow: none;
-  }
-
   .copy {
     bottom: 1em;
     height: 4em;
