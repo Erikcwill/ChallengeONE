@@ -44,22 +44,22 @@
   color: var(--button-text-secondary);
   border-color: var(--button-text-secondary);
   border: 1px solid;
-  cursor: url("/assets/images/svg/pointers/lock-open.svg"), auto;
+  cursor: url("./assets/images/svg/pointers/lock-open.svg"), auto;
 }
 
 .encrypt:active {
-  cursor: url("/assets/images/svg/pointers/lock-closed.svg"), auto;
+  cursor: url("./assets/images/svg/pointers/lock-closed.svg"), auto;
 }
 
 .decrypt:hover {
   background-color: var(--button-color-main);
   color: var(--button-text-main);
   border-color: var(--button-text-main);
-  cursor: url("/assets/images/svg/pointers/lock-closed.svg"), auto;
+  cursor: url("./assets/images/svg/pointers/lock-closed.svg"), auto;
 }
 
 .decrypt:active {
-  cursor: url("/assets/images/svg/pointers/lock-open.svg"), auto;
+  cursor: url("./assets/images/svg/pointers/lock-open.svg"), auto;
 }
 
 .clean:hover {
@@ -81,7 +81,7 @@
 }
 
 .copy:hover {
-  cursor: url("/assets/images/svg/pointers/copy-icon.svg"), auto;
+  cursor: url("./assets/images/svg/pointers/copy-icon.svg"), auto;
 }
 
 @media screen and (min-width: 768px) {
