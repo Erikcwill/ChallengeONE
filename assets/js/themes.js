@@ -16,7 +16,7 @@ const themes = {
     "--button-color-secondary": "#f7f3f3",
     "--button-text-secondary": "#0a3871",
     "--footer-itens-color": "#0a3871",
-    "--details-color": "#e0e0e0"
+    "--details-color": "#e0e0e0",
   },
   dark: {
     "--background-color": "#121212",
@@ -35,29 +35,42 @@ const themes = {
     "--button-color-secondary": "#121212",
     "--button-text-secondary": "#a688fa",
     "--footer-itens-color": "#0a3871",
-    "--details-color": "#787878"
-  }
+    "--details-color": "#787878",
+  },
 };
 
+function getBackgroundColor() {
+  return window
+    .getComputedStyle(document.body)
+    .getPropertyValue("--background-color");
+}
+
+function getMainColor() {
+  return window
+    .getComputedStyle(document.body)
+    .getPropertyValue("--main-color");
+}
+
 function setTheme(theme) {
-  document.body.classList.add('fade');
+  getMainColor();
+  getBackgroundColor()  
+  document.body.classList.add("fade");
 
   setTimeout(() => {
     const properties = themes[theme];
-    Object.keys(properties).forEach(key => {
+    Object.keys(properties).forEach((key) => {
       document.documentElement.style.setProperty(key, properties[key]);
     });
 
-    const footerIcons = document.querySelectorAll('img');
-    footerIcons.forEach(icon => {
-      const iconSrc = icon.getAttribute('src');
-      const iconThemeSrc = iconSrc.replace(/(light|dark|blue|green|purple)/, theme);
-      icon.setAttribute('src', iconThemeSrc);
+    const footerIcons = document.querySelectorAll("img");
+    footerIcons.forEach((icon) => {
+      const iconSrc = icon.getAttribute("src");
+      const iconThemeSrc = iconSrc.replace(
+        /(light|dark|blue|green|purple)/,
+        theme
+      );
+      icon.setAttribute("src", iconThemeSrc);
     });
-
-    document.body.classList.remove('fade');
+    document.body.classList.remove("fade");
   }, 200); // Tempo da transição em milissegundos (0.5 segundos neste exemplo)
 }
-
-
-

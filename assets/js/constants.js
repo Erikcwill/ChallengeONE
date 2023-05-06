@@ -19,3 +19,4 @@ const inputsOverlay = document.querySelectorAll(
 //inputs
 const mainTextArea = document.querySelector(".main_text");
 const keyInputs = document.querySelectorAll(".input-key");
+

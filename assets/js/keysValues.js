@@ -47,7 +47,15 @@ function setKey() {
     document.getElementById(prop).value = "";
   }
 
-  alert("Chave de criptografia definida com sucesso!");
+  const bgColor = getBackgroundColor();  
+  const buttonColor = getMainColor();
+  Swal.fire({
+    icon: "success",
+    title: "Beleza",
+    text: "Chave de criptografia definida com sucesso!",
+    background: bgColor,
+    confirmButtonColor: buttonColor,
+  });
 
   updateKeysText();
 }
@@ -69,7 +77,15 @@ function resetKey() {
     ufat: "u",
   };
 
-  alert("Valores redefinidos com sucesso!");
+  const bgColor = getBackgroundColor();  
+  const buttonColor = getMainColor();
+  Swal.fire({
+    icon: "success",
+    title: "Beleza",
+    text: "Valores redefinidos com sucesso! ",
+    background: bgColor,
+    confirmButtonColor: buttonColor,
+  });
 
   updateKeysText();
 }
