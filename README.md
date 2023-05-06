@@ -37,7 +37,9 @@ O site é composto por uma área de texto à esquerda e uma área de resultados 
 OU
 
 1.Você pode acessar atravez dos links
+<br>
 2.https://erikcwill.github.io/ChallengeONE/ (GitHub Pages)
+<br>
 3.https://decodificador-one.vercel.app/ (Vercel App)
 
 ## Como utilizar o criptografador/decriptografador
