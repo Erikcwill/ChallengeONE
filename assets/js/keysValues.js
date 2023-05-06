@@ -82,7 +82,7 @@ function resetKey() {
   Swal.fire({
     icon: "success",
     title: "Beleza",
-    text: "Valores redefinidos com sucesso! ",
+    text: "Valores redefinidos com sucesso!",
     background: bgColor,
     confirmButtonColor: buttonColor,
   });
