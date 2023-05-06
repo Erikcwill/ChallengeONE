@@ -40,17 +40,24 @@ const themes = {
 };
 
 function setTheme(theme) {
-  const properties = themes[theme];
-  Object.keys(properties).forEach(key => {
-    document.documentElement.style.setProperty(key, properties[key]);
-  });
+  document.body.classList.add('fade');
 
-  const footerIcons = document.querySelectorAll('img');
-  footerIcons.forEach(icon => {
-    const iconSrc = icon.getAttribute('src');
-    const iconThemeSrc = iconSrc.replace(/(light|dark|blue|green|purple)/, theme);
-    icon.setAttribute('src', iconThemeSrc);
-  });
+  setTimeout(() => {
+    const properties = themes[theme];
+    Object.keys(properties).forEach(key => {
+      document.documentElement.style.setProperty(key, properties[key]);
+    });
+
+    const footerIcons = document.querySelectorAll('img');
+    footerIcons.forEach(icon => {
+      const iconSrc = icon.getAttribute('src');
+      const iconThemeSrc = iconSrc.replace(/(light|dark|blue|green|purple)/, theme);
+      icon.setAttribute('src', iconThemeSrc);
+    });
+
+    document.body.classList.remove('fade');
+  }, 200); // Tempo da transição em milissegundos (0.5 segundos neste exemplo)
 }
+
 
 

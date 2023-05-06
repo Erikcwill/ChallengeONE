@@ -9,6 +9,7 @@
 }
 
 .button {
+  cursor: pointer;
   background-color: var(--button-color-secondary);
   color: var(--button-text-secondary);
   border-color: var(--button-text-secondary);

@@ -38,8 +38,6 @@ label {
   font-weight: bold;
 }
 
-/*Input Color*/
-
 input[type="text"] {
   font-size: 1rem;
   padding: 0.5rem;
@@ -65,6 +63,8 @@ input[type="text"] {
 /*Sessão das keys atuais*/
 
 .custom-itens:nth-child(2) {
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
   background-color: var(--background-color);
   padding: 2rem;
 }

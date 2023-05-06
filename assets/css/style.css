@@ -11,7 +11,7 @@
 
 :root {
   /*Colors*/
-
+  transition: all 0.5s ease;
   --main-color: #0a3871;
   --main-text-color: #0a3871;
   --button-color-main: #0a3871;
@@ -46,11 +46,17 @@
 }
 
 body {
+  opacity: 1;
+  transition: opacity 0.5s ease;
   font-family: var(--main-font);
   cursor: default;
   display: flex;
   flex-direction: column;
   background-color: var(--background-color);
+}
+
+body.fade {
+  opacity: 0;
 }
 
 main {
