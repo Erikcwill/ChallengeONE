@@ -2,7 +2,7 @@
 
 # Projeto Frontend Criptografador/Decriptografador
 
-![Descrição da imagem](README-imgs/full-dark.png)
+![Site completo](README-imgs/full-light.png)
 
 Este é um projeto criado para atender ao primeiro desafio proposto pela Turma 5 da ONE em parceria com a Alura. O objetivo era criar um criptografador/decriptografador que utilizasse as seguintes chaves:
 
@@ -16,12 +16,16 @@ Foi disponibilizado um modelo figma como referência, mas tivemos liberdade cria
 
 Além do que foi pedido, foi incluída uma função que permite ao usuário definir suas próprias chaves para as vogais, se desejar. Também foi criada uma função para modo escuro, sem a utilização de frameworks, apenas com HTML, CSS e Javascript. O Sweet Alert 2 foi utilizado para criar dois alertas.
 
+![Site completo](README-imgs/overlay-tablet.png)
+
 O site é composto por uma área de texto à esquerda e uma área de resultados à direita.
 
 ## Funcionalidades
 
 -   Criptografar e decriptografar texto utilizando as chaves pré-definidas ou as chaves personalizadas pelo usuário.
+![Site completo](README-imgs/overlay-dark.png)
 -   Alternar entre modo claro e modo escuro.
+![Site completo](README-imgs/menu-light.png)
 -   Exibir alertas para confirmações
 
 ## Tecnologias utilizadas
