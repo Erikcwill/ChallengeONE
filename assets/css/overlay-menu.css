@@ -38,6 +38,10 @@ label {
   font-weight: bold;
 }
 
+.input-key {
+  color: black;
+}
+
 input[type="text"] {
   font-size: 1rem;
   padding: 0.5rem;

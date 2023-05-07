@@ -3,14 +3,14 @@ function showMessage(message) {
   resultCrypto.textContent = message;
 }
 
-// Define uma função que exibe uma mensagem de erro, adiciona uma classe de animação de shake a um elemento específico, 
+// Define uma função que exibe uma mensagem de erro, adiciona uma classe de animação de shake a um elemento específico,
 // limpa o valor de um elemento de entrada e chama a função showMessage para exibir a mensagem de erro.
 // Finalmente, esconde um botão de cópia e remove a classe shake após um atraso de 1 segundo.
 function showError(message, shakedElement, inputElement) {
+  updateAreaSize()
   shakedElement.classList.add("shake"); // adiciona a classe shake ao elemento especificado
   inputElement.value = " "; // define o valor do elemento de entrada especificado como vazio
   showMessage(message); // chama a função showMessage para exibir a mensagem de erro
-  
   checkResultContent(); // chama a função checkResultContent
   copyButton.style.display = "none"; // esconde um botão de cópia
   setTimeout(function () {
@@ -27,7 +27,8 @@ function processText(action) {
     .getElementById("main_textarea")
     .value.toLowerCase();
 
-  if (inputText === "") { // verifica se o texto inserido está vazio
+  if (inputText === "") {
+    // verifica se o texto inserido está vazio
     showError(`Não há nada para ${action} aqui.`, resultArea, mainTextArea); // chama a função showError para exibir uma mensagem de erro caso o texto inserido esteja vazio
     return false;
   } else {
