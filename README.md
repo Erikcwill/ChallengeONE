@@ -1,5 +1,3 @@
-## Vitrine DEV
-
 # Decodificador ONE
 
 Este é um projeto criado para atender ao primeiro desafio proposto pela Turma 5 da ONE em parceria com a Alura.
