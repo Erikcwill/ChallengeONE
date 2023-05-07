@@ -20,7 +20,14 @@ Além do que foi pedido, foi incluída uma função que permite ao usuário defi
 
 O site é composto por uma área de texto à esquerda e uma área de resultados à direita. Ele foi desenvolvido usando a abordagem de mobile-first, onde o site é primeiro desenvolvido para versão mobile, seguido das versões para tablets, e versões de desktop ao final.
 
-![Site completo](README-imgs/mobile-version.png) ![Site completo](README-imgs/tablet-version-dark.png)
+
+<table style="border: none;">
+  <tr>
+    <td><img src="README-imgs/mobile-version.png" alt="Mobile-version"></td>
+    <td><img src="README-imgs/tablet-version-dark.png" alt="Tablet-version"></td>
+  </tr>
+</table>
+
 *Respectivamente as versões de mobile e tablet, uma em sua versão de modo claro e outras em sua versão de modo noturto*
 
 ## Funcionalidades
