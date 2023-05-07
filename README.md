@@ -122,3 +122,21 @@ OU
 ## Agradecimentos
 
 Gostaria de agradecer à Turma 5 da ONE e à Alura por proporcionar essa oportunidade de aprendizado e aprimoramento das habilidades em desenvolvimento frontend. Foi um desafio muito interessante e gratificante de ser realizado.
+
+## Vitrine DEV
+
+# Decodificador ONE
+
+Rápida descrição do objetivo de fazer esse projeto
+
+| :placard: Vitrine.Dev |     |
+| -------------  | --- |
+| :sparkles: Nome        | **Decodificador ONE**
+| :label: Tecnologias | javascript, html, css
+| :rocket: URL         | https://url-deploy.com.br
+| :fire: Desafio     | https://url-do-desafio.com.br
+
+<!-- Inserir imagem com a #vitrinedev ao final do link -->
+![Site completo](README-imgs/full-light.png?#vitrineDev)
+
+## Detalhes do projeto
