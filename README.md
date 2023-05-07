@@ -4,6 +4,8 @@
 
 ![Site completo](README-imgs/full-light.png)
 
+![Site completo](README-imgs/full-dark.png)
+
 Este é um projeto criado para atender ao primeiro desafio proposto pela Turma 5 da ONE em parceria com a Alura. O objetivo era criar um criptografador/decriptografador que utilizasse as seguintes chaves:
 
 -   Letra A: ai
@@ -34,6 +36,8 @@ O site é composto por uma área de texto à esquerda e uma área de resultados 
 
 <br>
 -   Exibir alertas para confirmações
+
+![Site completo](README-imgs/novas-alert1.png) ![Site completo](README-imgs/novas-alert2.png)
 
 ## Tecnologias utilizadas
 
@@ -84,7 +88,7 @@ OU
 
 <br>
 
-![Site completo](README-imgs/novas-chaves1.png)
+![Site completo](README-imgs/novas-chaves-1.png)
 
 
 3.  Clique no botão "Definir chaves" para salvar as chaves personalizadas
@@ -94,7 +98,7 @@ OU
 
 <br>
 
-![Site completo](README-imgs/novas-chaves2.png)
+![Site completo](README-imgs/novas-chaves-2.png)
 
 ## Agradecimentos
 
