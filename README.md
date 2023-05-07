@@ -58,16 +58,43 @@ OU
 ## Como utilizar o criptografador/decriptografador
 
 1.  Insira o texto que deseja criptografar ou decriptografar na área de texto à esquerda
+
+<br>
+
+![Site completo](README-imgs/como-usar.png)
+
 2.  Use os botões para definir se quer criptografar ou descriptografar
 3.  Clique no botão "Criptografar" ou "Decriptografar"
+
+<br>
+
+![Site completo](README-imgs/botoes.png)
+
 4.  O resultado será exibido na área de resultados à direita
 
 ## Como definir chaves personalizadas
 
 1.  Selecione a engrenagem no canto superior no menu de escolha de chaves
+
+<br>
+
+![Site completo](README-imgs/menus-dark.png)
+
 2.  Insira as chaves personalizadas para cada vogal nos campos correspondentes
+
+<br>
+
+![Site completo](README-imgs/novas-chaves1.png)
+
+
 3.  Clique no botão "Definir chaves" para salvar as chaves personalizadas
+
+
 4.  As chaves personalizadas estarão disponíveis para uso nas criptografias/decriptografias seguintes
+
+<br>
+
+![Site completo](README-imgs/novas-chaves2.png)
 
 ## Agradecimentos
 
