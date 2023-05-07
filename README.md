@@ -36,9 +36,10 @@ O site é composto por uma área de texto à esquerda e uma área de resultados 
 ![Site completo](README-imgs/menu-light.png)
 
 <br>
--   Exibir alertas para confirmações
 
-<table style="border: 0;">
+-   Exibir alertas para confirmações:
+
+<table style="border: none;">
   <tr>
     <td><img src="README-imgs/alert-1.png" alt="Alerta 1"></td>
     <td><img src="README-imgs/alert-2.png" alt="Alerta 2"></td>
