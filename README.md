@@ -38,12 +38,13 @@ O site é composto por uma área de texto à esquerda e uma área de resultados 
 <br>
 -   Exibir alertas para confirmações
 
-<table>
+<table style="border: 0;">
   <tr>
     <td><img src="README-imgs/alert-1.png" alt="Alerta 1"></td>
     <td><img src="README-imgs/alert-2.png" alt="Alerta 2"></td>
   </tr>
 </table>
+
 
 
 ## Tecnologias utilizadas
