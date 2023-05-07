@@ -2,7 +2,7 @@
 
 # Projeto Frontend codificador/decodificador
 
-<img src="README-imgs/full-light.png" alt="Site completo" width="500" height="300">
+![Site completo](README-imgs/full-light.png)
 
 Este é um projeto criado para atender ao primeiro desafio proposto pela Turma 5 da ONE em parceria com a Alura. O objetivo era criar um criptografador/decriptografador que utilizasse as seguintes chaves:
 
@@ -38,7 +38,13 @@ O site é composto por uma área de texto à esquerda e uma área de resultados 
 <br>
 -   Exibir alertas para confirmações
 
-![Site completo](README-imgs/alert-1.png) ![Site completo](README-imgs/alert-2.png)
+<table>
+  <tr>
+    <td><img src="README-imgs/alert-1.png" alt="Alerta 1"></td>
+    <td><img src="README-imgs/alert-2.png" alt="Alerta 2"></td>
+  </tr>
+</table>
+
 
 ## Tecnologias utilizadas
 
