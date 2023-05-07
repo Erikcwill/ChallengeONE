@@ -4,8 +4,6 @@
 
 ![Site completo](README-imgs/full-light.png)
 
-![Site completo](README-imgs/full-dark.png)
-
 Este é um projeto criado para atender ao primeiro desafio proposto pela Turma 5 da ONE em parceria com a Alura. O objetivo era criar um criptografador/decriptografador que utilizasse as seguintes chaves:
 
 -   Letra A: ai
@@ -18,9 +16,12 @@ Foi disponibilizado um modelo figma como referência, mas tivemos liberdade cria
 
 Além do que foi pedido, foi incluída uma função que permite ao usuário definir suas próprias chaves para as vogais, se desejar. Também foi criada uma função para modo escuro, sem a utilização de frameworks, apenas com HTML, CSS e Javascript. O Sweet Alert 2 foi utilizado para criar dois alertas.
 
-![Site completo](README-imgs/overlay-tablet.png)
+![Site completo](README-imgs/full-dark.png)
 
-O site é composto por uma área de texto à esquerda e uma área de resultados à direita.
+O site é composto por uma área de texto à esquerda e uma área de resultados à direita. Ele foi desenvolvido usando a abordagem de mobile-first, onde o site é primeiro desenvolvido para versão mobile, seguido das versões para tablets, e versões de desktop ao final.
+
+![Site completo](README-imgs/mobile-version.png) ![Site completo](README-imgs/tablet-version-dark.png)
+*Respectivamente as versões de mobile e tablet, uma em sua versão de modo claro e outras em sua versão de modo noturto*
 
 ## Funcionalidades
 
