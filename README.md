@@ -1,6 +1,6 @@
 
 
-# Projeto Frontend Criptografador/Decriptografador
+# Projeto Frontend codificador/decodificador
 
 ![Site completo](README-imgs/full-light.png)
 
@@ -64,7 +64,7 @@ OU
 ![Site completo](README-imgs/como-usar.png)
 
 2.  Use os botões para definir se quer criptografar ou descriptografar
-3.  Clique no botão "Criptografar" ou "Decriptografar"
+3.  Clique no botão "Criptografar" ou "Descriptografar"
 
 <br>
 
