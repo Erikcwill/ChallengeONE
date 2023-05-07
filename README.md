@@ -24,10 +24,14 @@ O site é composto por uma área de texto à esquerda e uma área de resultados 
 
 -   Criptografar e decriptografar texto utilizando as chaves pré-definidas ou as chaves personalizadas pelo usuário.
 <br>
+
 ![Site completo](README-imgs/overlay-dark.png)
+
 -   Alternar entre modo claro e modo escuro.
 <br>
+
 ![Site completo](README-imgs/menu-light.png)
+
 <br>
 -   Exibir alertas para confirmações
 
