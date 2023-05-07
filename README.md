@@ -38,7 +38,7 @@ O site é composto por uma área de texto à esquerda e uma área de resultados 
 <br>
 -   Exibir alertas para confirmações
 
-![Site completo](README-imgs/novas-alert1.png) ![Site completo](README-imgs/novas-alert2.png)
+![Site completo](README-imgs/novas-alert-1.png) ![Site completo](README-imgs/novas-alert-2.png)
 
 ## Tecnologias utilizadas
 
@@ -54,11 +54,11 @@ O site é composto por uma área de texto à esquerda e uma área de resultados 
 
 OU
 
-1.Você pode acessar atravez dos links
+1. Você pode acessar atravez dos links
 <br>
-2.https://erikcwill.github.io/ChallengeONE/ (GitHub Pages)
+2. https://erikcwill.github.io/ChallengeONE/ (GitHub Pages)
 <br>
-3.https://decodificador-one.vercel.app/ (Vercel App)
+3. https://decodificador-one.vercel.app/ (Vercel App)
 
 ## Como utilizar o criptografador/decriptografador
 
@@ -76,6 +76,8 @@ OU
 ![Site completo](README-imgs/botoes.png)
 
 4.  O resultado será exibido na área de resultados à direita
+
+![Site completo](README-imgs/resultados.png)
 
 ## Como definir chaves personalizadas
 
