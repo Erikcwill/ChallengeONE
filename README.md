@@ -2,13 +2,6 @@
 
 Este é um projeto criado para atender ao primeiro desafio proposto pela Turma 5 da ONE em parceria com a Alura.
 
-| :placard: Vitrine.Dev |     |
-| -------------  | --- |
-| :sparkles: Nome        | **Decodificador ONE**
-| :label: Tecnologias | javascript, html, css
-| :rocket: URL         | https://erikcwill.github.io/ChallengeONE
-| :fire: Desafio     | https://www.alura.com.br/challenges/challenge-one-logica/sprint01-construa-decodificador-texto-com-javascript
-
 <!-- Inserir imagem com a #vitrinedev ao final do link -->
 ![Site completo](README-imgs/full-light.png?#vitrineDev)
 
@@ -133,4 +126,11 @@ OU
 
 Gostaria de agradecer à Turma 5 da ONE e à Alura por proporcionar essa oportunidade de aprendizado e aprimoramento das habilidades em desenvolvimento frontend. Foi um desafio muito interessante e gratificante de ser realizado.
 
+
+| :placard: Vitrine.Dev |     |
+| -------------  | --- |
+| :sparkles: Nome        | **Decodificador ONE**
+| :label: Tecnologias | javascript, html, css
+| :rocket: URL         | https://erikcwill.github.io/ChallengeONE
+| :fire: Desafio     | https://www.alura.com.br/challenges/challenge-one-logica/sprint01-construa-decodificador-texto-com-javascript
 
